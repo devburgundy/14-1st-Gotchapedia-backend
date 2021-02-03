@@ -123,7 +123,6 @@ class MovieInfoView(View):
 
 class MovieDetailView(View):
     """
-    """
     영화 상세 정보 더보기 조회
 
     Author: 고수희
@@ -269,10 +268,10 @@ class CommentListView(View):
         ordered_list = sorted(comment_list, key=itemgetter("likeCount"), reverse=True)  # 좋아요 갯수만큼 댓글 리스트 정렬
 
         return JsonResponse({"data": ordered_list}, status=200)
-    """
 
 
 class CommentView(View):
+
     """
     특정 영화에 대한 댓글 생성
 
